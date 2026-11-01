@@ -16,7 +16,7 @@ local GameList = {
 }
 warn("[DEBUG] [Abysall Loader] GameList table configured. Current PlaceId:", tostring(game.PlaceId), "| GameId:", tostring(game.GameId))
 
-local BaseUrl = "https://raw.githubusercontent.com/weradof/tuff/refs/heads/main"
+local BaseUrl = "https://raw.githubusercontent.com/weradof/tuff/refs/heads/main/"
 warn("[DEBUG] [Abysall Loader] BaseUrl set to: " .. tostring(BaseUrl))
 
 warn("[DEBUG] [Abysall Loader] Beginning remote component loading phase via HttpGet & loadstring...")
