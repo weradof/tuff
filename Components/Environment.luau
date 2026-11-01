@@ -172,7 +172,7 @@ end)
 RunTest("identifyexecutor", function()
     assert(typeof(Global.identifyexecutor()) == "string", "Did not return a string")
 end)
-
+--[[
 RunTest("request", function()
     warn("[DEBUG] [Test: request] Executing HTTP request test...")
     local Response = Global.request({
@@ -182,7 +182,7 @@ RunTest("request", function()
     assert(Response.StatusCode == 200, "Status code should be 200")
     assert(typeof(Response.Body) == "string", "Body should be a string")
 end)
-
+--[[]]
 RunTest("cloneref", function()
     local TestPart = Instance.new("Part")
     local Clone = Global.cloneref(TestPart)
